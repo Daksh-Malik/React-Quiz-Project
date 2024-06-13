@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body{
+  background-color: #7cc6fe;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 600px;
+  height: 325px;
+  border: 1px solid black;
+  margin: 130px auto;
+  background-color: #252d4a;
+  border-radius: 15px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  padding: 50px;
+  color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+  
+.inner-container{  
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.question-head{
+  font-size: larger;
+  font-weight: 700;
+}
+.question-head span{
+  font-size: 2rem;
+}
+
+.question-title{
+  font-size: larger;
+  font-weight: 500;
+}
+
+.answer-box{
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.answer{
+  width: 250px;
+  border: 5px solid #234668;
+  background-color: #252d4a;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+.answer:hover{
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.btn{
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border: 5px solid #234668;
+  font-size: 16px;
+  background-color: #252d4a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score{
+  margin-top: 130px;
 }
